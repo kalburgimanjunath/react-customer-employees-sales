@@ -17,7 +17,12 @@ export default function Customers() {
       <h1>Customers</h1>
       {customers &&
         customers.map((item) => {
-          return <div>{item.name}</div>;
+          return (
+            <>
+              <div>{item.name}</div>
+              <div>{item.address}</div>
+            </>
+          );
         })}
       <button type="button">Add New</button>
     </div>

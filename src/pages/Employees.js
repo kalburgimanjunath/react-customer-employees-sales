@@ -17,9 +17,14 @@ export default function Employees() {
       <h1>Employees</h1>
       {employees &&
         employees.map((item) => {
-          return <div>{item.name}</div>;
+          return (
+            <>
+              <div>{item.name}</div>
+              <div>{item.address}</div>
+            </>
+          );
         })}
-        <button type="button">Add New</button>
+      <button type="button">Add New</button>
     </div>
   );
 }
